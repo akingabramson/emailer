@@ -1,5 +1,6 @@
 Emailer::Application.routes.draw do
-  root :to => "root#create"
+  resources :root, :only => :create
+  # root :to => "root#create"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
